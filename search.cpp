@@ -47,6 +47,7 @@ do {
 found=false;
 if(nim[j] == search)
 {
+cout<<"NIM\t\t"<<"Nama\t"<<"Alamat\t"<<"Golongan\t"<<endl;
 cout<<nim[j]<<"\t"<<nama[j]<<"\t"<<alamat[j]<<"\t"<<gol[j]<<endl;
 j++;
 }
@@ -54,7 +55,7 @@ else
 {j++;}
 
 }while((!found) & (j<=i));
-if(j>i)
+if(j>10)
 {cout<<"data tidak ditemukan"<<endl;}
 system("PAUSE");
 }
@@ -110,12 +111,13 @@ cin>>option;
     {
         system("CLS");
         cout<<"Golongan Ingin diubah menjadi :";
-        cin>>nama[j];
+        cin>>gol[j];
+        cout<<"NIM\t\t"<<"Nama\t"<<"Alamat\t"<<"Golongan\t"<<endl;
         cout<<nim[j]<<"\t"<<nama[j]<<"\t"<<alamat[j]<<"\t"<<gol[j]<<endl;
     }
     default:
     {
-        cout<<"Salah nomor mohon masukkan nomor yang benar";
+        cout<<"";
         system("PAUSE");
         break;
     }}
@@ -125,7 +127,7 @@ else
 {j++;}
 
 }while((!found) & (j<=i));
-if(j>i)
+if(j>10)
 {cout<<"data tidak ditemukan"<<endl;}
 system("PAUSE");
 }
